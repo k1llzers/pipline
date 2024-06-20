@@ -1,4 +1,3 @@
-FROM ubuntu:latest
 LABEL authors="Sasha"
 FROM eclipse-temurin:21-jre
 WORKDIR /for-pipline
