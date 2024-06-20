@@ -27,8 +27,11 @@ jobs:
         with:
           gradle-version: 8.5
 
+      - name: Verify code style
+        run: gradle checkstyleMain
+
       - name: Build with Gradle
-        run: ./gradlew build
+        run: gradle build
 
       - name: Publish JAR
         if: github.ref == 'refs/heads/main'
